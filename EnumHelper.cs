@@ -21,7 +21,7 @@ public static class EnumHelper
 		Type expr_0A = typeof(T);
 		if (!expr_0A.IsEnum)
 		{
-			throw new Exception("T must be an Enumeration type.");
+			throw new Exception("T must be an Enumeration type. ");
 		}
 		return (T)((object)Enum.ToObject(expr_0A, intValue));
 	}
