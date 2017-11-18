@@ -1,0 +1,10 @@
+Conexão encerrada de 'Balança' 127.0.0.1:9091
+Conexão encerrada de 'Portal' 127.0.0.1:9092
+Conexão encerrada de 'Scanner' 127.0.0.1:9093
+	Conectado em 'Balança' 127.0.0.1:9091
+	Conectado em 'Portal' 127.0.0.1:9092
+	Conectado em 'Scanner' 127.0.0.1:9093
+Dispositivos conectados com sucesso!
+11/18/2017 09:33:30.114  | Volume aferido: <<- 25182300100102057855000000;26.1;22.7;15.7;6009.3;0.58
+11/18/2017 09:33:30.132  |  ->> Praça de Destino: 05
+11/18/2017 09:33:30.145  |  ->> Saída do Sorter: 01

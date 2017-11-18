@@ -1,0 +1,11 @@
+C:\Users\Gil\Source\Repos\wave\bin\Debug\wave.exe
+C:\Users\Gil\Source\Repos\wave\bin\Debug\wave.pdb
+C:\Users\Gil\Source\Repos\wave\bin\Debug\AxInterop.MSWinsockLib.dll
+C:\Users\Gil\Source\Repos\wave\bin\Debug\Interop.MSWinsockLib.dll
+C:\Users\Gil\Source\Repos\wave\obj\x86\Debug\IntegracaoBalancaToledo.Properties.Resources.resources
+C:\Users\Gil\Source\Repos\wave\obj\x86\Debug\IntegracaoBalancaToledo.AboutBox.resources
+C:\Users\Gil\Source\Repos\wave\obj\x86\Debug\IntegracaoBalancaToledo.frmToledo.resources
+C:\Users\Gil\Source\Repos\wave\obj\x86\Debug\wave.csproj.GenerateResource.Cache
+C:\Users\Gil\Source\Repos\wave\obj\x86\Debug\wave.csproj.CoreCompileInputs.cache
+C:\Users\Gil\Source\Repos\wave\obj\x86\Debug\wave.exe
+C:\Users\Gil\Source\Repos\wave\obj\x86\Debug\wave.pdb

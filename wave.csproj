@@ -39,7 +39,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AxMSWinsockLib\SocketConsts.cs" />
+    <Compile Include="SocketConsts.cs" />
     <Compile Include="ColorExtensions.cs" />
     <Compile Include="EnumHelper.cs" />
     <Compile Include="IntegracaoBalancaToledo.Properties\Resources.cs" />

@@ -1,0 +1,51 @@
+18/11/2017 09:27:03 --> System.Runtime.InteropServices.COMException (0x800A9C54): Exceção de HRESULT: 0x800A9C54
+   em MSWinsockLib.WinsockClass.set_RemoteHost(String RemoteHost)
+   em AxMSWinsockLib.AxWinsock.set_RemoteHost(String value)
+   em IntegracaoBalancaToledo.frmToledo.btnRearmarScanner_Click(Object sender, EventArgs e) na C:\Users\Gil\Source\Repos\wave\IntegracaoBalancaToledo\frmToledo.cs:linha 445
+18/11/2017 09:27:18 --> Erro no socket 'Scanner': Connection is forcefully rejected
+18/11/2017 09:27:18 --> Erro no socket 'Portal': Connection is forcefully rejected
+18/11/2017 09:27:18 --> Erro no socket 'Balança': Connection is forcefully rejected
+18/11/2017 09:27:22 --> System.Runtime.InteropServices.COMException (0x800A9C54): Exceção de HRESULT: 0x800A9C54
+   em MSWinsockLib.WinsockClass.set_RemoteHost(String RemoteHost)
+   em AxMSWinsockLib.AxWinsock.set_RemoteHost(String value)
+   em IntegracaoBalancaToledo.frmToledo.btnRearmarScanner_Click(Object sender, EventArgs e) na C:\Users\Gil\Source\Repos\wave\IntegracaoBalancaToledo\frmToledo.cs:linha 445
+18/11/2017 09:27:44 --> Erro no socket 'Scanner': Connection is forcefully rejected
+18/11/2017 09:27:44 --> Erro no socket 'Portal': Connection is forcefully rejected
+18/11/2017 09:27:44 --> Erro no socket 'Balança': Connection is forcefully rejected
+18/11/2017 09:27:46 --> Erro no socket 'Portal': Connection is forcefully rejected
+18/11/2017 09:27:46 --> Erro no socket 'Balança': Connection is forcefully rejected
+18/11/2017 09:27:46 --> Erro no socket 'Scanner': Connection is forcefully rejected
+18/11/2017 09:27:58 --> Erro no socket 'Portal': Connection is forcefully rejected
+18/11/2017 09:27:58 --> Erro no socket 'Balança': Connection is forcefully rejected
+18/11/2017 09:27:58 --> Erro no socket 'Scanner': Connection is forcefully rejected
+18/11/2017 09:28:00 --> Erro no socket 'Portal': Connection is forcefully rejected
+18/11/2017 09:28:00 --> Erro no socket 'Balança': Connection is forcefully rejected
+18/11/2017 09:28:00 --> Erro no socket 'Scanner': Connection is forcefully rejected
+18/11/2017 09:28:04 --> System.Runtime.InteropServices.COMException (0x800A9C54): Exceção de HRESULT: 0x800A9C54
+   em MSWinsockLib.WinsockClass.set_RemoteHost(String RemoteHost)
+   em AxMSWinsockLib.AxWinsock.set_RemoteHost(String value)
+   em IntegracaoBalancaToledo.frmToledo.btnRearmarScanner_Click(Object sender, EventArgs e) na C:\Users\Gil\Source\Repos\wave\IntegracaoBalancaToledo\frmToledo.cs:linha 445
+18/11/2017 09:28:27 --> System.Runtime.InteropServices.COMException (0x800A9C54): Exceção de HRESULT: 0x800A9C54
+   em MSWinsockLib.WinsockClass.set_RemoteHost(String RemoteHost)
+   em AxMSWinsockLib.AxWinsock.set_RemoteHost(String value)
+   em IntegracaoBalancaToledo.frmToledo.btnRearmarScanner_Click(Object sender, EventArgs e) na C:\Users\Gil\Source\Repos\wave\IntegracaoBalancaToledo\frmToledo.cs:linha 445
+18/11/2017 09:28:38 --> System.Runtime.InteropServices.COMException (0x800A9C54): Exceção de HRESULT: 0x800A9C54
+   em MSWinsockLib.WinsockClass.set_RemoteHost(String RemoteHost)
+   em AxMSWinsockLib.AxWinsock.set_RemoteHost(String value)
+   em IntegracaoBalancaToledo.frmToledo.btnRearmarScanner_Click(Object sender, EventArgs e) na C:\Users\Gil\Source\Repos\wave\IntegracaoBalancaToledo\frmToledo.cs:linha 445
+18/11/2017 09:28:48 --> System.Runtime.InteropServices.COMException (0x800A9C54): Exceção de HRESULT: 0x800A9C54
+   em MSWinsockLib.WinsockClass.set_RemoteHost(String RemoteHost)
+   em AxMSWinsockLib.AxWinsock.set_RemoteHost(String value)
+   em IntegracaoBalancaToledo.frmToledo.btnRearmarScanner_Click(Object sender, EventArgs e) na C:\Users\Gil\Source\Repos\wave\IntegracaoBalancaToledo\frmToledo.cs:linha 445
+18/11/2017 09:28:56 --> System.Runtime.InteropServices.COMException (0x800A9C54): Exceção de HRESULT: 0x800A9C54
+   em MSWinsockLib.WinsockClass.set_RemoteHost(String RemoteHost)
+   em AxMSWinsockLib.AxWinsock.set_RemoteHost(String value)
+   em IntegracaoBalancaToledo.frmToledo.btnRearmarScanner_Click(Object sender, EventArgs e) na C:\Users\Gil\Source\Repos\wave\IntegracaoBalancaToledo\frmToledo.cs:linha 445
+18/11/2017 09:33:34 --> Erro no socket 'Balança': Connection is forcefully rejected
+18/11/2017 09:33:35 --> Erro no socket 'Portal': Connection is forcefully rejected
+18/11/2017 09:33:35 --> Erro no socket 'PLC': Connection is forcefully rejected
+18/11/2017 09:33:35 --> Erro no socket 'Scanner': Connection is forcefully rejected
+18/11/2017 09:33:36 --> Erro no socket 'Balança': Connection is forcefully rejected
+18/11/2017 09:33:37 --> Erro no socket 'Portal': Connection is forcefully rejected
+18/11/2017 09:33:37 --> Erro no socket 'PLC': Connection is forcefully rejected
+18/11/2017 09:33:37 --> Erro no socket 'Scanner': Connection is forcefully rejected

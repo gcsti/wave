@@ -5,15 +5,15 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Runtime.Versioning;
 
-[assembly: AssemblyVersion("1.0.6431.36654")]
+[assembly: AssemblyVersion("1.0.0.0")]
 [assembly: Debuggable(DebuggableAttribute.DebuggingModes.IgnoreSymbolStoreSequencePoints)]
-[assembly: AssemblyCompany("Studio Log")]
+[assembly: AssemblyCompany("Logstore")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCopyright("Copyright Studio Log©  2017")]
-[assembly: AssemblyDescription("Integração da Balança/Portal Toledo com software ERP da Solidez")]
+[assembly: AssemblyCopyright("Copyright Logstore©  2017")]
+[assembly: AssemblyDescription("Controle Fluxo Logístico")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
-[assembly: AssemblyProduct("Studio Log Bypass Tools")]
-[assembly: AssemblyTitle("Ferramenta de Integração")]
+[assembly: AssemblyProduct("Logstore Waave")]
+[assembly: AssemblyTitle("Wave")]
 [assembly: AssemblyTrademark("Todos os direitos reservados")]
 [assembly: CompilationRelaxations(8)]
 [assembly: RuntimeCompatibility(WrapNonExceptionThrows = true)]
