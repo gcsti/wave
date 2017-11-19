@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Configuracoes>
-  <IpBalanca>12.0.0.1</IpBalanca>
+  <IpBalanca>127.0.0.1</IpBalanca>
   <PortaBalanca>9091</PortaBalanca>
   <IpPortal>127.0.0.1</IpPortal>
   <PortaPortal>9092</PortaPortal>
@@ -10,14 +10,14 @@
   <PortaPLC>9094</PortaPLC>
   <CaminhoArquivoLeituras>C:\comum\ftp\txt_copia </CaminhoArquivoLeituras>
   <MascaraArquivoLeituras>SOLIDEZ_{data}_{hora}{data}{hora}{minuto}.txt</MascaraArquivoLeituras>
-  <RegistrarLogLeituras>False</RegistrarLogLeituras>
-  <RegistrarLogLeituraConsolidada>False</RegistrarLogLeituraConsolidada>
-  <RegistrarLogLeituraConsolidadaResumida>True</RegistrarLogLeituraConsolidadaResumida>
+  <RegistrarLogLeituras>True</RegistrarLogLeituras>
+  <RegistrarLogLeituraConsolidada>True</RegistrarLogLeituraConsolidada>
+  <RegistrarLogLeituraConsolidadaResumida>False</RegistrarLogLeituraConsolidadaResumida>
   <ExibirLogDestinoCaixaPLC>True</ExibirLogDestinoCaixaPLC>
   <ExibirErroDestinoCaixaPLC>True</ExibirErroDestinoCaixaPLC>
   <ExibirErroConexao>True</ExibirErroConexao>
-  <PracasPorSaida />
+  <PracasPorSaida>01|01;02|02;03|03</PracasPorSaida>
   <RejeitoSaida>03</RejeitoSaida>
-  <AnvisaSaida>03</AnvisaSaida>
-  <DesconectarSeFalhaNaFila>True</DesconectarSeFalhaNaFila>
+  <AnvisaSaida>05</AnvisaSaida>
+  <DesconectarSeFalhaNaFila>False</DesconectarSeFalhaNaFila>
 </Configuracoes>
