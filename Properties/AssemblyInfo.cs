@@ -5,14 +5,14 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Runtime.Versioning;
 
-[assembly: AssemblyVersion("2.0.0.0")]
+[assembly: AssemblyVersion("1.0.0.0")]
 [assembly: Debuggable(DebuggableAttribute.DebuggingModes.IgnoreSymbolStoreSequencePoints)]
 [assembly: AssemblyCompany("Logstore")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCopyright("Copyright Logstore®  2017")]
+[assembly: AssemblyCopyright("Copyright Logstore©  2017")]
 [assembly: AssemblyDescription("Controle Fluxo Logístico")]
-[assembly: AssemblyFileVersion("2.0.0.0")]
-[assembly: AssemblyProduct("Logstore Wave")]
+[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyProduct("Logstore Waave")]
 [assembly: AssemblyTitle("Wave")]
 [assembly: AssemblyTrademark("Todos os direitos reservados")]
 [assembly: CompilationRelaxations(8)]

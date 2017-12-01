@@ -39,11 +39,6 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Wave\SocketConsts.cs" />
     <Compile Include="Wave\ColorExtensions.cs" />
     <Compile Include="Properties\Resources.cs" />
@@ -71,8 +66,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
       <SubType>Designer</SubType>
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Wave\AboutBox.resx" />
     <EmbeddedResource Include="Wave\frmSplash.resx">
@@ -82,13 +75,9 @@
     <EmbeddedResource Include="Wave\frmWaveAutomatic.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AxInterop.MSWinsockLib.dll" />
-    <Content Include="Interop.MSWinsockLib.dll" />
     <Content Include="mswinsck.ocx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="Resources\BARRA-LOGO.JPG" />
-    <None Include="Resources\BARRA-LARANJA.JPG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
