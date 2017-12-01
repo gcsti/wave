@@ -7,7 +7,7 @@ public static class RichTextBoxExtension
 {
 	private const int lineOffSet = 4;
 
-	private const int fontSize = 16;
+	private const int fontSize = 12;
 
 	public const string DateTimeFormat = "MM/dd/yyyy hh:mm:ss.fff tt";
 
@@ -81,7 +81,7 @@ public static class RichTextBoxExtension
 			myRtb.Select(match.Index, replacement.Length);
 			myRtb.SelectionColor = Color.White;
 			myRtb.SelectionBackColor = Color.Gray;
-			myRtb.SelectionFont = new Font(new FontFamily("Arial Rounded MT Bold"), myRtb.Font.Size, FontStyle.Bold);
+			myRtb.SelectionFont = new Font(new FontFamily("Calibri Light"), myRtb.Font.Size, FontStyle.Bold);
 			num2++;
 		}
 	}
@@ -136,7 +136,7 @@ public static class RichTextBoxExtension
 				" <<- ",
 				text,
 				"\n"
-			}), Color.Red, Color.Yellow, new Font("Courrier New", 16f, FontStyle.Italic));
+			}), Color.Red, Color.Yellow, new Font("Calibri Light", 12f, FontStyle.Italic));
 		};
 		if (control.InvokeRequired)
 		{
@@ -163,7 +163,7 @@ public static class RichTextBoxExtension
 				" ->> ",
 				text,
 				"\n"
-			}), foreColor, new Font("Courrier New", 16f));
+			}), foreColor, new Font("Calibri Light", 12f));
 		};
 		if (control.InvokeRequired)
 		{
@@ -185,7 +185,7 @@ public static class RichTextBoxExtension
 				" <<- ",
 				text,
 				"\n"
-			}), Color.DarkBlue, new Font("Courrier New", 16f));
+			}), Color.DarkBlue, new Font("Calibri Light", 12f));
 		};
 		if (control.InvokeRequired)
 		{

@@ -9,14 +9,14 @@
   <IpPLC>127.0.0.1</IpPLC>
   <PortaPLC>9094</PortaPLC>
   <CaminhoArquivoLeituras>C:\comum\ftp\txt_copia </CaminhoArquivoLeituras>
-  <MascaraArquivoLeituras>SOLIDEZ_{data}_{hora}{data}{hora}{minuto}.txt</MascaraArquivoLeituras>
-  <RegistrarLogLeituras>True</RegistrarLogLeituras>
-  <RegistrarLogLeituraConsolidada>True</RegistrarLogLeituraConsolidada>
-  <RegistrarLogLeituraConsolidadaResumida>False</RegistrarLogLeituraConsolidadaResumida>
-  <ExibirLogDestinoCaixaPLC>True</ExibirLogDestinoCaixaPLC>
+  <MascaraArquivoLeituras>SOLIDEZ_{data}_{data}{hora}{minuto}{segundo}.txt</MascaraArquivoLeituras>
+  <RegistrarLogLeituras>False</RegistrarLogLeituras>
+  <RegistrarLogLeituraConsolidada>False</RegistrarLogLeituraConsolidada>
+  <RegistrarLogLeituraConsolidadaResumida>True</RegistrarLogLeituraConsolidadaResumida>
+  <ExibirLogDestinoCaixaPLC>False</ExibirLogDestinoCaixaPLC>
   <ExibirErroDestinoCaixaPLC>True</ExibirErroDestinoCaixaPLC>
-  <ExibirErroConexao>True</ExibirErroConexao>
-  <PracasPorSaida>01|01;02|02;03|03</PracasPorSaida>
+  <ExibirErroConexao>False</ExibirErroConexao>
+  <PracasPorSaida>03|03;02|01;01|02;04|05</PracasPorSaida>
   <RejeitoSaida>03</RejeitoSaida>
   <AnvisaSaida>05</AnvisaSaida>
   <DesconectarSeFalhaNaFila>False</DesconectarSeFalhaNaFila>

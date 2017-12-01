@@ -1,0 +1,46 @@
+
+BALANÇA:     Dados da Mensagem:
+    -------------------
+    Mensagem...:         0.58
+    Data/Hora..: 28/11/2017 19:24:17.160
+    Dispositivo: Balança
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9091
+
+
+DIMENSIONADOR:     Dados da Mensagem:
+    -------------------
+    Mensagem...: ODm02610227015700060093
+    Data/Hora..: 28/11/2017 19:24:18.180
+    Dispositivo: Portal
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9092
+
+
+SCANNER     Dados da Mensagem:
+    -------------------
+    Mensagem...: 25182300100102057855000000
+    Data/Hora..: 28/11/2017 19:24:19.199
+    Dispositivo: Scanner
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9093
+
+11/28/2017 07:24:19.208  | Volume aferido: <<- 
+    Dados da Mensagem:
+    -------------------
+    Mensagem...: 25182300100102057855000000;26.1;22.7;15.7;6009.3;0.58
+    Data/Hora..: 28/11/2017 19:24:19.199
+    Dispositivo: Scanner\Balança\Portal
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9093
+
+11/28/2017 07:24:19.236  |  ->> Praça de Destino: 05
+11/28/2017 07:24:19.254  |  ->> Saída do Sorter: 01
+Buffer de leituras excluído.
+11/28/2017 07:24:26.563  --> Todos os dispositivos desconectados.
+11/28/2017 07:24:26.614  --> Todos os recursos liberados.
+Arquivo de log salvo em C:\Users\Gil\source\repos\wave\bin\Debug\Solidez_IntegraToledo_28112017072428.log

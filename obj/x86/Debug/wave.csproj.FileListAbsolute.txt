@@ -10,3 +10,5 @@ C:\Users\Gil\Source\Repos\wave\obj\x86\Debug\wave.exe
 C:\Users\Gil\Source\Repos\wave\obj\x86\Debug\wave.pdb
 C:\Users\Gil\Source\Repos\wave\obj\x86\Debug\Properties.Resources.resources
 C:\Users\Gil\Source\Repos\wave\obj\x86\Debug\Wave.frmSplash.resources
+C:\Users\Gil\Source\Repos\wave\bin\Debug\mswinsck.ocx
+C:\Users\Gil\Source\Repos\wave\obj\x86\Debug\wave.csprojResolveAssemblyReference.cache

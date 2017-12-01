@@ -115,8 +115,6 @@ namespace Wave
 
 		private Label lblFilaBalanca;
 
-		private Label label6;
-
 		private System.Windows.Forms.Timer timerFilaLeituras;
 
 		private TabPage tabPageSorter;
@@ -180,8 +178,9 @@ namespace Wave
 		private ComboBox cboSaidaRejeito;
 
 		private Label label12;
-
-		private CheckBox chkDesconectarSeFalhaNaFila;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private CheckBox chkDesconectarSeFalhaNaFila;
         /// <summary>
         /// 
         /// </summary>
@@ -1286,7 +1285,6 @@ namespace Wave
             this.lblFilaScanner = new System.Windows.Forms.Label();
             this.lblFilaDim = new System.Windows.Forms.Label();
             this.lblFilaBalanca = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.btnReamarLeituras = new System.Windows.Forms.Button();
             this.btnRearmarPLC = new System.Windows.Forms.Button();
             this.btnRearmarScanner = new System.Windows.Forms.Button();
@@ -1336,6 +1334,8 @@ namespace Wave
             this.btnSalvarLog = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.timerFilaLeituras = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.statusStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPageDisp.SuspendLayout();
@@ -1346,15 +1346,17 @@ namespace Wave
             this.tabPageSorter.SuspendLayout();
             this.pnlSorter.SuspendLayout();
             this.tabPageLog.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // btnDisconnect
             // 
             this.btnDisconnect.Enabled = false;
             this.btnDisconnect.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDisconnect.Location = new System.Drawing.Point(775, 57);
+            this.btnDisconnect.Location = new System.Drawing.Point(25, 481);
             this.btnDisconnect.Name = "btnDisconnect";
-            this.btnDisconnect.Size = new System.Drawing.Size(144, 35);
+            this.btnDisconnect.Size = new System.Drawing.Size(151, 35);
             this.btnDisconnect.TabIndex = 75;
             this.btnDisconnect.Text = "Desconectar";
             this.btnDisconnect.UseVisualStyleBackColor = true;
@@ -1365,10 +1367,10 @@ namespace Wave
             this.chkExibirErroCnn.AutoSize = true;
             this.chkExibirErroCnn.Checked = true;
             this.chkExibirErroCnn.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkExibirErroCnn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkExibirErroCnn.Location = new System.Drawing.Point(547, 115);
+            this.chkExibirErroCnn.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkExibirErroCnn.Location = new System.Drawing.Point(21, 304);
             this.chkExibirErroCnn.Name = "chkExibirErroCnn";
-            this.chkExibirErroCnn.Size = new System.Drawing.Size(168, 21);
+            this.chkExibirErroCnn.Size = new System.Drawing.Size(175, 23);
             this.chkExibirErroCnn.TabIndex = 90;
             this.chkExibirErroCnn.Text = "Exibir erro de conexão";
             this.chkExibirErroCnn.UseVisualStyleBackColor = true;
@@ -1376,19 +1378,19 @@ namespace Wave
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(376, 25);
+            this.label5.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(18, 81);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(253, 17);
+            this.label5.Size = new System.Drawing.Size(263, 19);
             this.label5.TabIndex = 88;
             this.label5.Text = "Máscara nome dos  arquivos de leitura";
             // 
             // txtMaskArquivoLeitura
             // 
-            this.txtMaskArquivoLeitura.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaskArquivoLeitura.Location = new System.Drawing.Point(379, 45);
+            this.txtMaskArquivoLeitura.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaskArquivoLeitura.Location = new System.Drawing.Point(21, 101);
             this.txtMaskArquivoLeitura.Name = "txtMaskArquivoLeitura";
-            this.txtMaskArquivoLeitura.Size = new System.Drawing.Size(332, 23);
+            this.txtMaskArquivoLeitura.Size = new System.Drawing.Size(332, 26);
             this.txtMaskArquivoLeitura.TabIndex = 89;
             this.txtMaskArquivoLeitura.Text = "SOLIDEZ_{data}_{hora}{data}{hora}{minuto}.txt";
             // 
@@ -1396,7 +1398,7 @@ namespace Wave
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(577, 21);
+            this.label4.Location = new System.Drawing.Point(22, 345);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(96, 17);
             this.label4.TabIndex = 84;
@@ -1405,7 +1407,7 @@ namespace Wave
             // txtIPplc
             // 
             this.txtIPplc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIPplc.Location = new System.Drawing.Point(580, 41);
+            this.txtIPplc.Location = new System.Drawing.Point(25, 365);
             this.txtIPplc.Name = "txtIPplc";
             this.txtIPplc.Size = new System.Drawing.Size(98, 23);
             this.txtIPplc.TabIndex = 85;
@@ -1414,7 +1416,7 @@ namespace Wave
             // txtPortaPLC
             // 
             this.txtPortaPLC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPortaPLC.Location = new System.Drawing.Point(684, 41);
+            this.txtPortaPLC.Location = new System.Drawing.Point(129, 365);
             this.txtPortaPLC.Name = "txtPortaPLC";
             this.txtPortaPLC.Size = new System.Drawing.Size(47, 23);
             this.txtPortaPLC.TabIndex = 86;
@@ -1422,12 +1424,13 @@ namespace Wave
             // 
             // btnFechar
             // 
+            this.btnFechar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnFechar.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFechar.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFechar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnFechar.Location = new System.Drawing.Point(775, 102);
+            this.btnFechar.Location = new System.Drawing.Point(853, 66);
             this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(144, 35);
+            this.btnFechar.Size = new System.Drawing.Size(93, 35);
             this.btnFechar.TabIndex = 83;
             this.btnFechar.Text = "Fechar";
             this.btnFechar.UseVisualStyleBackColor = false;
@@ -1436,10 +1439,10 @@ namespace Wave
             // chkLogLeituras
             // 
             this.chkLogLeituras.AutoSize = true;
-            this.chkLogLeituras.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkLogLeituras.Location = new System.Drawing.Point(19, 82);
+            this.chkLogLeituras.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkLogLeituras.Location = new System.Drawing.Point(21, 151);
             this.chkLogLeituras.Name = "chkLogLeituras";
-            this.chkLogLeituras.Size = new System.Drawing.Size(206, 21);
+            this.chkLogLeituras.Size = new System.Drawing.Size(216, 23);
             this.chkLogLeituras.TabIndex = 82;
             this.chkLogLeituras.Text = "Exibir leituras por dispositivo";
             this.chkLogLeituras.UseVisualStyleBackColor = true;
@@ -1447,19 +1450,19 @@ namespace Wave
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(16, 25);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(211, 17);
+            this.label3.Size = new System.Drawing.Size(219, 19);
             this.label3.TabIndex = 80;
             this.label3.Text = "Caminho dos arquivos de leitura";
             // 
             // txtDestinoArquivos
             // 
-            this.txtDestinoArquivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDestinoArquivos.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDestinoArquivos.Location = new System.Drawing.Point(19, 45);
             this.txtDestinoArquivos.Name = "txtDestinoArquivos";
-            this.txtDestinoArquivos.Size = new System.Drawing.Size(332, 23);
+            this.txtDestinoArquivos.Size = new System.Drawing.Size(332, 26);
             this.txtDestinoArquivos.TabIndex = 81;
             this.txtDestinoArquivos.Text = "C:\\comum\\ftp\\txt_copia ";
             // 
@@ -1467,7 +1470,7 @@ namespace Wave
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(393, 21);
+            this.label2.Location = new System.Drawing.Point(22, 236);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(123, 17);
             this.label2.TabIndex = 76;
@@ -1476,9 +1479,9 @@ namespace Wave
             // btnConnect
             // 
             this.btnConnect.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConnect.Location = new System.Drawing.Point(775, 18);
+            this.btnConnect.Location = new System.Drawing.Point(25, 440);
             this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(144, 35);
+            this.btnConnect.Size = new System.Drawing.Size(151, 35);
             this.btnConnect.TabIndex = 74;
             this.btnConnect.Text = "Conectar";
             this.btnConnect.UseVisualStyleBackColor = true;
@@ -1487,7 +1490,7 @@ namespace Wave
             // txtIpScanner
             // 
             this.txtIpScanner.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIpScanner.Location = new System.Drawing.Point(396, 41);
+            this.txtIpScanner.Location = new System.Drawing.Point(25, 256);
             this.txtIpScanner.Name = "txtIpScanner";
             this.txtIpScanner.Size = new System.Drawing.Size(98, 23);
             this.txtIpScanner.TabIndex = 77;
@@ -1496,7 +1499,7 @@ namespace Wave
             // txtPortaScanner
             // 
             this.txtPortaScanner.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPortaScanner.Location = new System.Drawing.Point(500, 41);
+            this.txtPortaScanner.Location = new System.Drawing.Point(129, 256);
             this.txtPortaScanner.Name = "txtPortaScanner";
             this.txtPortaScanner.Size = new System.Drawing.Size(47, 23);
             this.txtPortaScanner.TabIndex = 78;
@@ -1506,7 +1509,7 @@ namespace Wave
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(207, 21);
+            this.label1.Location = new System.Drawing.Point(22, 128);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(165, 17);
             this.label1.TabIndex = 72;
@@ -1515,7 +1518,7 @@ namespace Wave
             // txtIpPortal
             // 
             this.txtIpPortal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIpPortal.Location = new System.Drawing.Point(210, 41);
+            this.txtIpPortal.Location = new System.Drawing.Point(25, 148);
             this.txtIpPortal.Name = "txtIpPortal";
             this.txtIpPortal.Size = new System.Drawing.Size(98, 23);
             this.txtIpPortal.TabIndex = 73;
@@ -1524,7 +1527,7 @@ namespace Wave
             // txtPortaPortal
             // 
             this.txtPortaPortal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPortaPortal.Location = new System.Drawing.Point(314, 41);
+            this.txtPortaPortal.Location = new System.Drawing.Point(129, 148);
             this.txtPortaPortal.Name = "txtPortaPortal";
             this.txtPortaPortal.Size = new System.Drawing.Size(47, 23);
             this.txtPortaPortal.TabIndex = 74;
@@ -1565,10 +1568,10 @@ namespace Wave
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rchLog.BackColor = System.Drawing.Color.WhiteSmoke;
             this.rchLog.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rchLog.Font = new System.Drawing.Font("Courier New", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rchLog.Location = new System.Drawing.Point(11, 195);
+            this.rchLog.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rchLog.Location = new System.Drawing.Point(395, 107);
             this.rchLog.Name = "rchLog";
-            this.rchLog.Size = new System.Drawing.Size(950, 440);
+            this.rchLog.Size = new System.Drawing.Size(551, 526);
             this.rchLog.TabIndex = 74;
             this.rchLog.Text = "";
             // 
@@ -1578,7 +1581,7 @@ namespace Wave
             this.toolStripStatusLabel1});
             this.statusStrip1.Location = new System.Drawing.Point(0, 640);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(973, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(963, 22);
             this.statusStrip1.TabIndex = 75;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -1597,10 +1600,10 @@ namespace Wave
             // chkLogLeiturasConsolidada
             // 
             this.chkLogLeiturasConsolidada.AutoSize = true;
-            this.chkLogLeiturasConsolidada.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkLogLeiturasConsolidada.Location = new System.Drawing.Point(19, 115);
+            this.chkLogLeiturasConsolidada.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkLogLeiturasConsolidada.Location = new System.Drawing.Point(21, 184);
             this.chkLogLeiturasConsolidada.Name = "chkLogLeiturasConsolidada";
-            this.chkLogLeiturasConsolidada.Size = new System.Drawing.Size(265, 21);
+            this.chkLogLeiturasConsolidada.Size = new System.Drawing.Size(274, 23);
             this.chkLogLeiturasConsolidada.TabIndex = 91;
             this.chkLogLeiturasConsolidada.Text = "Exibir leituras consolidadas detalhada";
             this.chkLogLeiturasConsolidada.UseVisualStyleBackColor = true;
@@ -1608,29 +1611,24 @@ namespace Wave
             // 
             // tabControl1
             // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.tabControl1.Controls.Add(this.tabPageDisp);
             this.tabControl1.Controls.Add(this.tabPageSorter);
             this.tabControl1.Controls.Add(this.tabPageLog);
-            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Location = new System.Drawing.Point(12, 79);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(948, 181);
+            this.tabControl1.Size = new System.Drawing.Size(377, 554);
             this.tabControl1.TabIndex = 92;
             // 
             // tabPageDisp
             // 
-            this.tabPageDisp.Controls.Add(this.lblFilaScanner);
-            this.tabPageDisp.Controls.Add(this.lblFilaDim);
-            this.tabPageDisp.Controls.Add(this.lblFilaBalanca);
-            this.tabPageDisp.Controls.Add(this.label6);
-            this.tabPageDisp.Controls.Add(this.btnReamarLeituras);
             this.tabPageDisp.Controls.Add(this.btnRearmarPLC);
             this.tabPageDisp.Controls.Add(this.btnRearmarScanner);
             this.tabPageDisp.Controls.Add(this.btnRearmarPortal);
             this.tabPageDisp.Controls.Add(this.btnRearmarBalanca);
-            this.tabPageDisp.Controls.Add(this.btnFechar);
             this.tabPageDisp.Controls.Add(this.txtIpBalanca);
             this.tabPageDisp.Controls.Add(this.txtPortaBalanca);
             this.tabPageDisp.Controls.Add(this.label2);
@@ -1649,10 +1647,10 @@ namespace Wave
             this.tabPageDisp.Controls.Add(this.txtIpPortal);
             this.tabPageDisp.Controls.Add(this.label1);
             this.tabPageDisp.Controls.Add(this.SocketPLC);
-            this.tabPageDisp.Location = new System.Drawing.Point(4, 22);
+            this.tabPageDisp.Location = new System.Drawing.Point(4, 28);
             this.tabPageDisp.Name = "tabPageDisp";
             this.tabPageDisp.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageDisp.Size = new System.Drawing.Size(940, 155);
+            this.tabPageDisp.Size = new System.Drawing.Size(369, 522);
             this.tabPageDisp.TabIndex = 0;
             this.tabPageDisp.Text = "Dispositivos";
             this.tabPageDisp.UseVisualStyleBackColor = true;
@@ -1660,53 +1658,43 @@ namespace Wave
             // lblFilaScanner
             // 
             this.lblFilaScanner.AutoSize = true;
-            this.lblFilaScanner.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFilaScanner.Location = new System.Drawing.Point(555, 115);
+            this.lblFilaScanner.Font = new System.Drawing.Font("Calibri Light", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFilaScanner.Location = new System.Drawing.Point(536, 63);
             this.lblFilaScanner.Name = "lblFilaScanner";
-            this.lblFilaScanner.Size = new System.Drawing.Size(50, 25);
+            this.lblFilaScanner.Size = new System.Drawing.Size(72, 42);
             this.lblFilaScanner.TabIndex = 96;
             this.lblFilaScanner.Text = "S[0]";
             // 
             // lblFilaDim
             // 
             this.lblFilaDim.AutoSize = true;
-            this.lblFilaDim.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFilaDim.Location = new System.Drawing.Point(498, 115);
+            this.lblFilaDim.Font = new System.Drawing.Font("Calibri Light", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFilaDim.Location = new System.Drawing.Point(463, 63);
             this.lblFilaDim.Name = "lblFilaDim";
-            this.lblFilaDim.Size = new System.Drawing.Size(51, 25);
+            this.lblFilaDim.Size = new System.Drawing.Size(77, 42);
             this.lblFilaDim.TabIndex = 95;
             this.lblFilaDim.Text = "D[0]";
             // 
             // lblFilaBalanca
             // 
             this.lblFilaBalanca.AutoSize = true;
-            this.lblFilaBalanca.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFilaBalanca.Location = new System.Drawing.Point(444, 115);
+            this.lblFilaBalanca.Font = new System.Drawing.Font("Calibri Light", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFilaBalanca.Location = new System.Drawing.Point(395, 63);
             this.lblFilaBalanca.Name = "lblFilaBalanca";
-            this.lblFilaBalanca.Size = new System.Drawing.Size(50, 25);
+            this.lblFilaBalanca.Size = new System.Drawing.Size(75, 42);
             this.lblFilaBalanca.TabIndex = 94;
             this.lblFilaBalanca.Text = "B[0]";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(393, 115);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 25);
-            this.label6.TabIndex = 93;
-            this.label6.Text = "Fila:";
             // 
             // btnReamarLeituras
             // 
             this.btnReamarLeituras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnReamarLeituras.Enabled = false;
-            this.btnReamarLeituras.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReamarLeituras.Location = new System.Drawing.Point(25, 109);
+            this.btnReamarLeituras.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReamarLeituras.Location = new System.Drawing.Point(614, 66);
             this.btnReamarLeituras.Name = "btnReamarLeituras";
-            this.btnReamarLeituras.Size = new System.Drawing.Size(336, 28);
+            this.btnReamarLeituras.Size = new System.Drawing.Size(116, 35);
             this.btnReamarLeituras.TabIndex = 92;
-            this.btnReamarLeituras.Text = "Limpar Falha de Leituras";
+            this.btnReamarLeituras.Text = "Limpar Falhas";
             this.btnReamarLeituras.UseVisualStyleBackColor = false;
             this.btnReamarLeituras.Click += new System.EventHandler(this.btnReamarLeituras_Click);
             // 
@@ -1715,7 +1703,7 @@ namespace Wave
             this.btnRearmarPLC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnRearmarPLC.Enabled = false;
             this.btnRearmarPLC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRearmarPLC.Location = new System.Drawing.Point(580, 70);
+            this.btnRearmarPLC.Location = new System.Drawing.Point(25, 394);
             this.btnRearmarPLC.Name = "btnRearmarPLC";
             this.btnRearmarPLC.Size = new System.Drawing.Size(151, 28);
             this.btnRearmarPLC.TabIndex = 91;
@@ -1728,7 +1716,7 @@ namespace Wave
             this.btnRearmarScanner.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnRearmarScanner.Enabled = false;
             this.btnRearmarScanner.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRearmarScanner.Location = new System.Drawing.Point(396, 70);
+            this.btnRearmarScanner.Location = new System.Drawing.Point(25, 285);
             this.btnRearmarScanner.Name = "btnRearmarScanner";
             this.btnRearmarScanner.Size = new System.Drawing.Size(151, 28);
             this.btnRearmarScanner.TabIndex = 90;
@@ -1741,7 +1729,7 @@ namespace Wave
             this.btnRearmarPortal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnRearmarPortal.Enabled = false;
             this.btnRearmarPortal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRearmarPortal.Location = new System.Drawing.Point(210, 70);
+            this.btnRearmarPortal.Location = new System.Drawing.Point(25, 177);
             this.btnRearmarPortal.Name = "btnRearmarPortal";
             this.btnRearmarPortal.Size = new System.Drawing.Size(151, 28);
             this.btnRearmarPortal.TabIndex = 89;
@@ -1765,7 +1753,7 @@ namespace Wave
             // SocketScanner
             // 
             this.SocketScanner.Enabled = true;
-            this.SocketScanner.Location = new System.Drawing.Point(508, -4);
+            this.SocketScanner.Location = new System.Drawing.Point(137, 211);
             this.SocketScanner.Name = "SocketScanner";
             this.SocketScanner.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("SocketScanner.OcxState")));
             this.SocketScanner.Size = new System.Drawing.Size(28, 28);
@@ -1793,7 +1781,7 @@ namespace Wave
             // SocketPortal
             // 
             this.SocketPortal.Enabled = true;
-            this.SocketPortal.Location = new System.Drawing.Point(326, -4);
+            this.SocketPortal.Location = new System.Drawing.Point(141, 103);
             this.SocketPortal.Name = "SocketPortal";
             this.SocketPortal.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("SocketPortal.OcxState")));
             this.SocketPortal.Size = new System.Drawing.Size(28, 28);
@@ -1807,7 +1795,7 @@ namespace Wave
             // SocketPLC
             // 
             this.SocketPLC.Enabled = true;
-            this.SocketPLC.Location = new System.Drawing.Point(688, -4);
+            this.SocketPLC.Location = new System.Drawing.Point(133, 320);
             this.SocketPLC.Name = "SocketPLC";
             this.SocketPLC.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("SocketPLC.OcxState")));
             this.SocketPLC.Size = new System.Drawing.Size(28, 28);
@@ -1821,10 +1809,10 @@ namespace Wave
             // tabPageSorter
             // 
             this.tabPageSorter.Controls.Add(this.pnlSorter);
-            this.tabPageSorter.Location = new System.Drawing.Point(4, 22);
+            this.tabPageSorter.Location = new System.Drawing.Point(4, 28);
             this.tabPageSorter.Name = "tabPageSorter";
             this.tabPageSorter.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSorter.Size = new System.Drawing.Size(940, 155);
+            this.tabPageSorter.Size = new System.Drawing.Size(369, 522);
             this.tabPageSorter.TabIndex = 2;
             this.tabPageSorter.Text = "Configuração do Sorter";
             this.tabPageSorter.UseVisualStyleBackColor = true;
@@ -1861,9 +1849,10 @@ namespace Wave
             this.pnlSorter.Controls.Add(this.btnPcaAddS1);
             this.pnlSorter.Controls.Add(this.label7);
             this.pnlSorter.Controls.Add(this.txtPcaS1);
-            this.pnlSorter.Location = new System.Drawing.Point(6, 6);
+            this.pnlSorter.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlSorter.Location = new System.Drawing.Point(6, 3);
             this.pnlSorter.Name = "pnlSorter";
-            this.pnlSorter.Size = new System.Drawing.Size(928, 143);
+            this.pnlSorter.Size = new System.Drawing.Size(334, 520);
             this.pnlSorter.TabIndex = 0;
             // 
             // chkDesconectarSeFalhaNaFila
@@ -1871,15 +1860,17 @@ namespace Wave
             this.chkDesconectarSeFalhaNaFila.AutoSize = true;
             this.chkDesconectarSeFalhaNaFila.Checked = true;
             this.chkDesconectarSeFalhaNaFila.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkDesconectarSeFalhaNaFila.Location = new System.Drawing.Point(697, 111);
+            this.chkDesconectarSeFalhaNaFila.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkDesconectarSeFalhaNaFila.Location = new System.Drawing.Point(37, 439);
             this.chkDesconectarSeFalhaNaFila.Name = "chkDesconectarSeFalhaNaFila";
-            this.chkDesconectarSeFalhaNaFila.Size = new System.Drawing.Size(158, 17);
+            this.chkDesconectarSeFalhaNaFila.Size = new System.Drawing.Size(208, 23);
             this.chkDesconectarSeFalhaNaFila.TabIndex = 122;
             this.chkDesconectarSeFalhaNaFila.Text = "Desconectar se falha na fila";
             this.chkDesconectarSeFalhaNaFila.UseVisualStyleBackColor = true;
             // 
             // cboSaidaAnvisa
             // 
+            this.cboSaidaAnvisa.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboSaidaAnvisa.FormattingEnabled = true;
             this.cboSaidaAnvisa.Items.AddRange(new object[] {
             "01",
@@ -1887,24 +1878,25 @@ namespace Wave
             "03",
             "04",
             "05"});
-            this.cboSaidaAnvisa.Location = new System.Drawing.Point(697, 77);
+            this.cboSaidaAnvisa.Location = new System.Drawing.Point(152, 389);
             this.cboSaidaAnvisa.Name = "cboSaidaAnvisa";
-            this.cboSaidaAnvisa.Size = new System.Drawing.Size(93, 21);
+            this.cboSaidaAnvisa.Size = new System.Drawing.Size(93, 27);
             this.cboSaidaAnvisa.TabIndex = 121;
             this.cboSaidaAnvisa.Text = "03";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(694, 56);
+            this.label13.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(148, 367);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(96, 17);
+            this.label13.Size = new System.Drawing.Size(96, 19);
             this.label13.TabIndex = 120;
             this.label13.Text = "Anvisa saída?";
             // 
             // cboSaidaRejeito
             // 
+            this.cboSaidaRejeito.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboSaidaRejeito.FormattingEnabled = true;
             this.cboSaidaRejeito.Items.AddRange(new object[] {
             "01",
@@ -1912,26 +1904,26 @@ namespace Wave
             "03",
             "04",
             "05"});
-            this.cboSaidaRejeito.Location = new System.Drawing.Point(697, 28);
+            this.cboSaidaRejeito.Location = new System.Drawing.Point(152, 327);
             this.cboSaidaRejeito.Name = "cboSaidaRejeito";
-            this.cboSaidaRejeito.Size = new System.Drawing.Size(93, 21);
+            this.cboSaidaRejeito.Size = new System.Drawing.Size(93, 27);
             this.cboSaidaRejeito.TabIndex = 119;
             this.cboSaidaRejeito.Text = "01";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(694, 7);
+            this.label12.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(149, 306);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(98, 17);
+            this.label12.Size = new System.Drawing.Size(100, 19);
             this.label12.TabIndex = 118;
             this.label12.Text = "Rejeito saída?";
             // 
             // btnPcaDelS5
             // 
             this.btnPcaDelS5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPcaDelS5.Location = new System.Drawing.Point(637, 27);
+            this.btnPcaDelS5.Location = new System.Drawing.Point(91, 326);
             this.btnPcaDelS5.Name = "btnPcaDelS5";
             this.btnPcaDelS5.Size = new System.Drawing.Size(31, 23);
             this.btnPcaDelS5.TabIndex = 116;
@@ -1942,7 +1934,7 @@ namespace Wave
             // btnPcaAddS5
             // 
             this.btnPcaAddS5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPcaAddS5.Location = new System.Drawing.Point(605, 27);
+            this.btnPcaAddS5.Location = new System.Drawing.Point(59, 326);
             this.btnPcaAddS5.Name = "btnPcaAddS5";
             this.btnPcaAddS5.Size = new System.Drawing.Size(31, 23);
             this.btnPcaAddS5.TabIndex = 115;
@@ -1953,46 +1945,46 @@ namespace Wave
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(566, 7);
+            this.label11.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(20, 306);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(108, 17);
+            this.label11.Size = new System.Drawing.Size(107, 19);
             this.label11.TabIndex = 114;
             this.label11.Text = "Praças Saída 5:";
             // 
             // lstPcaSaida5
             // 
-            this.lstPcaSaida5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstPcaSaida5.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstPcaSaida5.FormattingEnabled = true;
-            this.lstPcaSaida5.ItemHeight = 18;
-            this.lstPcaSaida5.Location = new System.Drawing.Point(569, 56);
+            this.lstPcaSaida5.ItemHeight = 19;
+            this.lstPcaSaida5.Location = new System.Drawing.Point(23, 355);
             this.lstPcaSaida5.Name = "lstPcaSaida5";
-            this.lstPcaSaida5.Size = new System.Drawing.Size(99, 76);
+            this.lstPcaSaida5.Size = new System.Drawing.Size(99, 61);
             this.lstPcaSaida5.TabIndex = 113;
             // 
             // txtPcaS5
             // 
             this.txtPcaS5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPcaS5.Location = new System.Drawing.Point(569, 27);
+            this.txtPcaS5.Location = new System.Drawing.Point(23, 326);
             this.txtPcaS5.Name = "txtPcaS5";
             this.txtPcaS5.Size = new System.Drawing.Size(30, 23);
             this.txtPcaS5.TabIndex = 112;
             // 
             // lstPcaSaida1
             // 
-            this.lstPcaSaida1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstPcaSaida1.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstPcaSaida1.FormattingEnabled = true;
-            this.lstPcaSaida1.ItemHeight = 18;
+            this.lstPcaSaida1.ItemHeight = 19;
             this.lstPcaSaida1.Location = new System.Drawing.Point(24, 56);
             this.lstPcaSaida1.Name = "lstPcaSaida1";
-            this.lstPcaSaida1.Size = new System.Drawing.Size(99, 76);
+            this.lstPcaSaida1.Size = new System.Drawing.Size(99, 61);
             this.lstPcaSaida1.Sorted = true;
             this.lstPcaSaida1.TabIndex = 93;
             // 
             // btnPcaDelS4
             // 
             this.btnPcaDelS4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPcaDelS4.Location = new System.Drawing.Point(505, 27);
+            this.btnPcaDelS4.Location = new System.Drawing.Point(214, 174);
             this.btnPcaDelS4.Name = "btnPcaDelS4";
             this.btnPcaDelS4.Size = new System.Drawing.Size(31, 23);
             this.btnPcaDelS4.TabIndex = 111;
@@ -2003,7 +1995,7 @@ namespace Wave
             // btnPcaAddS4
             // 
             this.btnPcaAddS4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPcaAddS4.Location = new System.Drawing.Point(473, 27);
+            this.btnPcaAddS4.Location = new System.Drawing.Point(182, 174);
             this.btnPcaAddS4.Name = "btnPcaAddS4";
             this.btnPcaAddS4.Size = new System.Drawing.Size(31, 23);
             this.btnPcaAddS4.TabIndex = 110;
@@ -2014,27 +2006,27 @@ namespace Wave
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(434, 7);
+            this.label10.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(143, 149);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(108, 17);
+            this.label10.Size = new System.Drawing.Size(107, 19);
             this.label10.TabIndex = 109;
             this.label10.Text = "Praças Saída 4:";
             // 
             // lstPcaSaida4
             // 
-            this.lstPcaSaida4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstPcaSaida4.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstPcaSaida4.FormattingEnabled = true;
-            this.lstPcaSaida4.ItemHeight = 18;
-            this.lstPcaSaida4.Location = new System.Drawing.Point(437, 56);
+            this.lstPcaSaida4.ItemHeight = 19;
+            this.lstPcaSaida4.Location = new System.Drawing.Point(146, 203);
             this.lstPcaSaida4.Name = "lstPcaSaida4";
-            this.lstPcaSaida4.Size = new System.Drawing.Size(99, 76);
+            this.lstPcaSaida4.Size = new System.Drawing.Size(99, 61);
             this.lstPcaSaida4.TabIndex = 108;
             // 
             // txtPcaS4
             // 
             this.txtPcaS4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPcaS4.Location = new System.Drawing.Point(437, 27);
+            this.txtPcaS4.Location = new System.Drawing.Point(146, 174);
             this.txtPcaS4.Name = "txtPcaS4";
             this.txtPcaS4.Size = new System.Drawing.Size(30, 23);
             this.txtPcaS4.TabIndex = 107;
@@ -2042,7 +2034,7 @@ namespace Wave
             // btnPcaDelS3
             // 
             this.btnPcaDelS3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPcaDelS3.Location = new System.Drawing.Point(369, 27);
+            this.btnPcaDelS3.Location = new System.Drawing.Point(92, 174);
             this.btnPcaDelS3.Name = "btnPcaDelS3";
             this.btnPcaDelS3.Size = new System.Drawing.Size(31, 23);
             this.btnPcaDelS3.TabIndex = 106;
@@ -2053,7 +2045,7 @@ namespace Wave
             // btnPcaAddS3
             // 
             this.btnPcaAddS3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPcaAddS3.Location = new System.Drawing.Point(337, 27);
+            this.btnPcaAddS3.Location = new System.Drawing.Point(60, 174);
             this.btnPcaAddS3.Name = "btnPcaAddS3";
             this.btnPcaAddS3.Size = new System.Drawing.Size(31, 23);
             this.btnPcaAddS3.TabIndex = 105;
@@ -2064,27 +2056,27 @@ namespace Wave
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(298, 7);
+            this.label9.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(21, 149);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(108, 17);
+            this.label9.Size = new System.Drawing.Size(107, 19);
             this.label9.TabIndex = 104;
             this.label9.Text = "Praças Saída 3:";
             // 
             // lstPcaSaida3
             // 
-            this.lstPcaSaida3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstPcaSaida3.Font = new System.Drawing.Font("Calibri Light", 12F);
             this.lstPcaSaida3.FormattingEnabled = true;
-            this.lstPcaSaida3.ItemHeight = 18;
-            this.lstPcaSaida3.Location = new System.Drawing.Point(301, 56);
+            this.lstPcaSaida3.ItemHeight = 19;
+            this.lstPcaSaida3.Location = new System.Drawing.Point(24, 203);
             this.lstPcaSaida3.Name = "lstPcaSaida3";
-            this.lstPcaSaida3.Size = new System.Drawing.Size(99, 76);
+            this.lstPcaSaida3.Size = new System.Drawing.Size(99, 61);
             this.lstPcaSaida3.TabIndex = 103;
             // 
             // txtPcaS3
             // 
             this.txtPcaS3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPcaS3.Location = new System.Drawing.Point(301, 27);
+            this.txtPcaS3.Location = new System.Drawing.Point(24, 174);
             this.txtPcaS3.Name = "txtPcaS3";
             this.txtPcaS3.Size = new System.Drawing.Size(30, 23);
             this.txtPcaS3.TabIndex = 102;
@@ -2092,7 +2084,7 @@ namespace Wave
             // btnPcaDelS2
             // 
             this.btnPcaDelS2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPcaDelS2.Location = new System.Drawing.Point(230, 27);
+            this.btnPcaDelS2.Location = new System.Drawing.Point(214, 27);
             this.btnPcaDelS2.Name = "btnPcaDelS2";
             this.btnPcaDelS2.Size = new System.Drawing.Size(31, 23);
             this.btnPcaDelS2.TabIndex = 101;
@@ -2103,7 +2095,7 @@ namespace Wave
             // btnPcaAddS2
             // 
             this.btnPcaAddS2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPcaAddS2.Location = new System.Drawing.Point(198, 27);
+            this.btnPcaAddS2.Location = new System.Drawing.Point(182, 27);
             this.btnPcaAddS2.Name = "btnPcaAddS2";
             this.btnPcaAddS2.Size = new System.Drawing.Size(31, 23);
             this.btnPcaAddS2.TabIndex = 100;
@@ -2114,27 +2106,27 @@ namespace Wave
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(159, 7);
+            this.label8.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(143, 7);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(108, 17);
+            this.label8.Size = new System.Drawing.Size(107, 19);
             this.label8.TabIndex = 99;
             this.label8.Text = "Praças Saída 2:";
             // 
             // lstPcaSaida2
             // 
-            this.lstPcaSaida2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstPcaSaida2.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstPcaSaida2.FormattingEnabled = true;
-            this.lstPcaSaida2.ItemHeight = 18;
-            this.lstPcaSaida2.Location = new System.Drawing.Point(162, 56);
+            this.lstPcaSaida2.ItemHeight = 19;
+            this.lstPcaSaida2.Location = new System.Drawing.Point(146, 56);
             this.lstPcaSaida2.Name = "lstPcaSaida2";
-            this.lstPcaSaida2.Size = new System.Drawing.Size(99, 76);
+            this.lstPcaSaida2.Size = new System.Drawing.Size(99, 61);
             this.lstPcaSaida2.TabIndex = 98;
             // 
             // txtPcaS2
             // 
             this.txtPcaS2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPcaS2.Location = new System.Drawing.Point(162, 27);
+            this.txtPcaS2.Location = new System.Drawing.Point(146, 27);
             this.txtPcaS2.Name = "txtPcaS2";
             this.txtPcaS2.Size = new System.Drawing.Size(30, 23);
             this.txtPcaS2.TabIndex = 97;
@@ -2164,10 +2156,10 @@ namespace Wave
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(21, 7);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(108, 17);
+            this.label7.Size = new System.Drawing.Size(107, 19);
             this.label7.TabIndex = 94;
             this.label7.Text = "Praças Saída 1:";
             // 
@@ -2184,7 +2176,6 @@ namespace Wave
             this.tabPageLog.Controls.Add(this.chkExibirErroDestCx);
             this.tabPageLog.Controls.Add(this.chkExibirDestinoPLC4);
             this.tabPageLog.Controls.Add(this.chkLogLeiturasConsolidadaResumida);
-            this.tabPageLog.Controls.Add(this.btnLimpar);
             this.tabPageLog.Controls.Add(this.btnSalvarLog);
             this.tabPageLog.Controls.Add(this.txtDestinoArquivos);
             this.tabPageLog.Controls.Add(this.chkExibirErroCnn);
@@ -2193,10 +2184,10 @@ namespace Wave
             this.tabPageLog.Controls.Add(this.txtMaskArquivoLeitura);
             this.tabPageLog.Controls.Add(this.chkLogLeituras);
             this.tabPageLog.Controls.Add(this.label5);
-            this.tabPageLog.Location = new System.Drawing.Point(4, 22);
+            this.tabPageLog.Location = new System.Drawing.Point(4, 28);
             this.tabPageLog.Name = "tabPageLog";
             this.tabPageLog.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageLog.Size = new System.Drawing.Size(940, 155);
+            this.tabPageLog.Size = new System.Drawing.Size(369, 522);
             this.tabPageLog.TabIndex = 1;
             this.tabPageLog.Text = "Log de Eventos";
             this.tabPageLog.UseVisualStyleBackColor = true;
@@ -2206,10 +2197,10 @@ namespace Wave
             this.chkExibirErroDestCx.AutoSize = true;
             this.chkExibirErroDestCx.Checked = true;
             this.chkExibirErroDestCx.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkExibirErroDestCx.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkExibirErroDestCx.Location = new System.Drawing.Point(547, 82);
+            this.chkExibirErroDestCx.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkExibirErroDestCx.Location = new System.Drawing.Point(21, 271);
             this.chkExibirErroDestCx.Name = "chkExibirErroDestCx";
-            this.chkExibirErroDestCx.Size = new System.Drawing.Size(217, 21);
+            this.chkExibirErroDestCx.Size = new System.Drawing.Size(226, 23);
             this.chkExibirErroDestCx.TabIndex = 96;
             this.chkExibirErroDestCx.Text = "Exibir erro de destino de caixa";
             this.chkExibirErroDestCx.UseVisualStyleBackColor = true;
@@ -2219,10 +2210,10 @@ namespace Wave
             this.chkExibirDestinoPLC4.AutoSize = true;
             this.chkExibirDestinoPLC4.Checked = true;
             this.chkExibirDestinoPLC4.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkExibirDestinoPLC4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkExibirDestinoPLC4.Location = new System.Drawing.Point(290, 115);
+            this.chkExibirDestinoPLC4.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkExibirDestinoPLC4.Location = new System.Drawing.Point(21, 244);
             this.chkExibirDestinoPLC4.Name = "chkExibirDestinoPLC4";
-            this.chkExibirDestinoPLC4.Size = new System.Drawing.Size(177, 21);
+            this.chkExibirDestinoPLC4.Size = new System.Drawing.Size(182, 23);
             this.chkExibirDestinoPLC4.TabIndex = 95;
             this.chkExibirDestinoPLC4.Text = "Exibir destino caixa PLC";
             this.chkExibirDestinoPLC4.UseVisualStyleBackColor = true;
@@ -2232,10 +2223,10 @@ namespace Wave
             this.chkLogLeiturasConsolidadaResumida.AutoSize = true;
             this.chkLogLeiturasConsolidadaResumida.Checked = true;
             this.chkLogLeiturasConsolidadaResumida.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkLogLeiturasConsolidadaResumida.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkLogLeiturasConsolidadaResumida.Location = new System.Drawing.Point(290, 82);
+            this.chkLogLeiturasConsolidadaResumida.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkLogLeiturasConsolidadaResumida.Location = new System.Drawing.Point(21, 211);
             this.chkLogLeiturasConsolidadaResumida.Name = "chkLogLeiturasConsolidadaResumida";
-            this.chkLogLeiturasConsolidadaResumida.Size = new System.Drawing.Size(260, 21);
+            this.chkLogLeiturasConsolidadaResumida.Size = new System.Drawing.Size(270, 23);
             this.chkLogLeiturasConsolidadaResumida.TabIndex = 94;
             this.chkLogLeiturasConsolidadaResumida.Text = "Exibir leituras consolidadas resumida";
             this.chkLogLeiturasConsolidadaResumida.UseVisualStyleBackColor = true;
@@ -2243,10 +2234,11 @@ namespace Wave
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpar.Location = new System.Drawing.Point(770, 86);
+            this.btnLimpar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLimpar.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.Location = new System.Drawing.Point(736, 66);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(144, 35);
+            this.btnLimpar.Size = new System.Drawing.Size(111, 35);
             this.btnLimpar.TabIndex = 93;
             this.btnLimpar.Text = "Limpar Log";
             this.btnLimpar.UseVisualStyleBackColor = true;
@@ -2254,8 +2246,8 @@ namespace Wave
             // 
             // btnSalvarLog
             // 
-            this.btnSalvarLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvarLog.Location = new System.Drawing.Point(770, 39);
+            this.btnSalvarLog.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvarLog.Location = new System.Drawing.Point(21, 334);
             this.btnSalvarLog.Name = "btnSalvarLog";
             this.btnSalvarLog.Size = new System.Drawing.Size(144, 35);
             this.btnSalvarLog.TabIndex = 92;
@@ -2269,15 +2261,42 @@ namespace Wave
             this.timerFilaLeituras.Interval = 80;
             this.timerFilaLeituras.Tick += new System.EventHandler(this.timerFilaLeituras_Tick);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Properties.Resources.BARRA_LARANJA;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1400, 60);
+            this.pictureBox1.TabIndex = 93;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.Image = global::Properties.Resources.BARRA_LOGO;
+            this.pictureBox2.Location = new System.Drawing.Point(813, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(150, 60);
+            this.pictureBox2.TabIndex = 94;
+            this.pictureBox2.TabStop = false;
+            // 
             // frmWaveAutomatic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(973, 662);
+            this.ClientSize = new System.Drawing.Size(963, 662);
+            this.Controls.Add(this.lblFilaScanner);
+            this.Controls.Add(this.lblFilaDim);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.btnLimpar);
+            this.Controls.Add(this.lblFilaBalanca);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.btnReamarLeituras);
             this.Controls.Add(this.rchLog);
+            this.Controls.Add(this.btnFechar);
             this.Name = "frmWaveAutomatic";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Logstore Wave";
@@ -2296,6 +2315,8 @@ namespace Wave
             this.pnlSorter.PerformLayout();
             this.tabPageLog.ResumeLayout(false);
             this.tabPageLog.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

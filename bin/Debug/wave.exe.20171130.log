@@ -1,0 +1,54 @@
+Arquivo de configuração atualizado em 11/30/2017 11:56:16.466 .
+11/30/2017 11:56:16.496  --> Iniciando conexão com dispositivos...
+Buffer de leituras excluído.
+11/30/2017 11:57:30.309  --> Todos os dispositivos desconectados.
+11/30/2017 11:57:30.362  --> Todos os recursos liberados.
+Arquivo de log salvo em C:\Users\Gil\source\repos\wave\bin\Debug\Solidez_IntegraToledo_30112017115802.logArquivo de configuração atualizado em 11/30/2017 11:59:28.672 .
+11/30/2017 11:59:28.674  --> Iniciando conexão com dispositivos...
+	Conectado em 'Balança' 127.0.0.1:9091
+	Conectado em 'Portal' 127.0.0.1:9092
+	Conectado em 'Scanner' 127.0.0.1:9093
+	Conectado em 'PLC' 127.0.0.1:9094
+Dispositivos conectados com sucesso!
+
+BALANÇA:     Dados da Mensagem:
+    -------------------
+    Mensagem...:         0.58
+    Data/Hora..: 30/11/2017 23:59:40.796
+    Dispositivo: Balança
+    HostName...: 127.0.0.1
+    IpAddress..: 127.0.0.1
+    Port.......: 9091
+
+
+DIMENSIONADOR:     Dados da Mensagem:
+    -------------------
+    Mensagem...: ODm02610227015700060093
+    Data/Hora..: 30/11/2017 23:59:41.925
+    Dispositivo: Portal
+    HostName...: 127.0.0.1
+    IpAddress..: 127.0.0.1
+    Port.......: 9092
+
+
+SCANNER     Dados da Mensagem:
+    -------------------
+    Mensagem...: 25182300100102057855000000
+    Data/Hora..: 30/11/2017 23:59:43.301
+    Dispositivo: Scanner
+    HostName...: 127.0.0.1
+    IpAddress..: 127.0.0.1
+    Port.......: 9093
+
+11/30/2017 11:59:43.365  | Volume aferido: <<- 
+    Dados da Mensagem:
+    -------------------
+    Mensagem...: 25182300100102057855000000;26.1;22.7;15.7;6009.3;0.58
+    Data/Hora..: 30/11/2017 23:59:43.301
+    Dispositivo: Scanner\Balança\Portal
+    HostName...: 127.0.0.1
+    IpAddress..: 127.0.0.1
+    Port.......: 9093
+
+11/30/2017 11:59:43.407  |  ->> Praça de Destino: 05
+11/30/2017 11:59:43.445  |  ->> Saída do Sorter: 01

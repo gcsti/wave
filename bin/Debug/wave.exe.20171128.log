@@ -1,0 +1,391 @@
+Arquivo de configuração atualizado em 11/28/2017 07:24:43.860 .
+11/28/2017 07:24:43.862  --> Iniciando conexão com dispositivos...
+	Conectado em 'Balança' 192.168.0.190:9091
+	Conectado em 'Portal' 192.168.0.190:9092
+	Conectado em 'PLC' 192.168.0.190:9094
+	Conectado em 'Scanner' 192.168.0.190:9093
+Dispositivos conectados com sucesso!
+
+BALANÇA:     Dados da Mensagem:
+    -------------------
+    Mensagem...:         0.58
+    Data/Hora..: 28/11/2017 19:24:57.379
+    Dispositivo: Balança
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9091
+
+
+DIMENSIONADOR:     Dados da Mensagem:
+    -------------------
+    Mensagem...: ODm02610227015700060093
+    Data/Hora..: 28/11/2017 19:24:58.402
+    Dispositivo: Portal
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9092
+
+
+SCANNER     Dados da Mensagem:
+    -------------------
+    Mensagem...: 25182300100102057855000000
+    Data/Hora..: 28/11/2017 19:24:59.419
+    Dispositivo: Scanner
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9093
+
+11/28/2017 07:24:59.445  | Volume aferido: <<- 
+    Dados da Mensagem:
+    -------------------
+    Mensagem...: 25182300100102057855000000;26.1;22.7;15.7;6009.3;0.58
+    Data/Hora..: 28/11/2017 19:24:59.419
+    Dispositivo: Scanner\Balança\Portal
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9093
+
+11/28/2017 07:24:59.462  |  ->> Praça de Destino: 05
+11/28/2017 07:24:59.478  |  ->> Saída do Sorter: 01
+
+BALANÇA:     Dados da Mensagem:
+    -------------------
+    Mensagem...:         0.58
+    Data/Hora..: 28/11/2017 19:25:31.338
+    Dispositivo: Balança
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9091
+
+
+DIMENSIONADOR:     Dados da Mensagem:
+    -------------------
+    Mensagem...: ODm02610227015700060093
+    Data/Hora..: 28/11/2017 19:25:32.363
+    Dispositivo: Portal
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9092
+
+
+SCANNER     Dados da Mensagem:
+    -------------------
+    Mensagem...: 25182300100102037855000000
+    Data/Hora..: 28/11/2017 19:25:33.392
+    Dispositivo: Scanner
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9093
+
+11/28/2017 07:25:33.418  | Volume aferido: <<- 
+    Dados da Mensagem:
+    -------------------
+    Mensagem...: 25182300100102037855000000;26.1;22.7;15.7;6009.3;0.58
+    Data/Hora..: 28/11/2017 19:25:33.392
+    Dispositivo: Scanner\Balança\Portal
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9093
+
+11/28/2017 07:25:33.463  |  ->> Praça de Destino: 03
+11/28/2017 07:25:33.480  |  ->> Saída do Sorter: 03
+
+DIMENSIONADOR:     Dados da Mensagem:
+    -------------------
+    Mensagem...: ODm02610227015700060093
+    Data/Hora..: 28/11/2017 19:25:56.440
+    Dispositivo: Portal
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9092
+
+
+BALANÇA:     Dados da Mensagem:
+    -------------------
+    Mensagem...:         0.58
+    Data/Hora..: 28/11/2017 19:25:57.462
+    Dispositivo: Balança
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9091
+
+
+SCANNER     Dados da Mensagem:
+    -------------------
+    Mensagem...: 25182300100102057855000000
+    Data/Hora..: 28/11/2017 19:25:58.491
+    Dispositivo: Scanner
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9093
+
+11/28/2017 07:25:58.510  | Volume aferido: <<- 
+    Dados da Mensagem:
+    -------------------
+    Mensagem...: 25182300100102057855000000;26.1;22.7;15.7;6009.3;0.58
+    Data/Hora..: 28/11/2017 19:25:58.491
+    Dispositivo: Scanner\Balança\Portal
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9093
+
+11/28/2017 07:25:58.529  |  ->> Praça de Destino: 05
+11/28/2017 07:25:58.547  |  ->> Saída do Sorter: 01
+Buffer de leituras excluído.
+11/28/2017 07:26:09.205  --> Todos os dispositivos desconectados.
+11/28/2017 07:26:09.246  --> Todos os recursos liberados.
+Arquivo de configuração atualizado em 11/28/2017 07:26:15.799 .
+11/28/2017 07:26:15.802  --> Iniciando conexão com dispositivos...
+	Conectado em 'Balança' 192.168.0.190:9091
+	Conectado em 'Portal' 192.168.0.190:9092
+	Conectado em 'Scanner' 192.168.0.190:9093
+	Conectado em 'PLC' 192.168.0.190:9094
+Dispositivos conectados com sucesso!
+
+BALANÇA:     Dados da Mensagem:
+    -------------------
+    Mensagem...:         0.58
+    Data/Hora..: 28/11/2017 19:26:37.024
+    Dispositivo: Balança
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9091
+
+
+DIMENSIONADOR:     Dados da Mensagem:
+    -------------------
+    Mensagem...: ODm02610227015700060093
+    Data/Hora..: 28/11/2017 19:26:38.063
+    Dispositivo: Portal
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9092
+
+
+SCANNER     Dados da Mensagem:
+    -------------------
+    Mensagem...: 25182300100102057855000000
+    Data/Hora..: 28/11/2017 19:26:39.165
+    Dispositivo: Scanner
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9093
+
+11/28/2017 07:26:39.194  | Volume aferido: <<- 
+    Dados da Mensagem:
+    -------------------
+    Mensagem...: 25182300100102057855000000;26.1;22.7;15.7;6009.3;0.58
+    Data/Hora..: 28/11/2017 19:26:39.165
+    Dispositivo: Scanner\Balança\Portal
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9093
+
+11/28/2017 07:26:39.224  |  ->> Praça de Destino: 05
+11/28/2017 07:26:39.264  |  ->> Saída do Sorter: 01
+
+BALANÇA:     Dados da Mensagem:
+    -------------------
+    Mensagem...:         0.58
+    Data/Hora..: 28/11/2017 19:26:53.217
+    Dispositivo: Balança
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9091
+
+
+DIMENSIONADOR:     Dados da Mensagem:
+    -------------------
+    Mensagem...: ODm02610227015700060093ODm02610227015700060093
+    Data/Hora..: 28/11/2017 19:26:54.265
+    Dispositivo: Portal
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9092
+
+
+SCANNER     Dados da Mensagem:
+    -------------------
+    Mensagem...: 2518230010010205785500000025182300100102057855000000
+    Data/Hora..: 28/11/2017 19:26:55.316
+    Dispositivo: Scanner
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9093
+
+11/28/2017 07:26:55.353  | Volume aferido: <<- 
+    Dados da Mensagem:
+    -------------------
+    Mensagem...: 2518230010010205785500000025182300100102057855000000;26.1;22.7;15.7;6009.3;0.58
+    Data/Hora..: 28/11/2017 19:26:55.316
+    Dispositivo: Scanner\Balança\Portal
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9093
+
+11/28/2017 07:26:55.390  |  ->> Praça de Destino: 05
+11/28/2017 07:26:55.431  |  ->> Saída do Sorter: 01
+
+BALANÇA:     Dados da Mensagem:
+    -------------------
+    Mensagem...:         0.58
+    Data/Hora..: 28/11/2017 19:26:56.481
+    Dispositivo: Balança
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9091
+
+
+BALANÇA:     Dados da Mensagem:
+    -------------------
+    Mensagem...:         0.58
+    Data/Hora..: 28/11/2017 19:27:04.459
+    Dispositivo: Balança
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9091
+
+
+DIMENSIONADOR:     Dados da Mensagem:
+    -------------------
+    Mensagem...: ODm02610227015700060093
+    Data/Hora..: 28/11/2017 19:27:05.511
+    Dispositivo: Portal
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9092
+
+
+SCANNER     Dados da Mensagem:
+    -------------------
+    Mensagem...: 25182300100102057855000000
+    Data/Hora..: 28/11/2017 19:27:06.557
+    Dispositivo: Scanner
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9093
+
+11/28/2017 07:27:06.594  | Volume aferido: <<- 
+    Dados da Mensagem:
+    -------------------
+    Mensagem...: 25182300100102057855000000;26.1;22.7;15.7;6009.3;0.58
+    Data/Hora..: 28/11/2017 19:27:06.557
+    Dispositivo: Scanner\Balança\Portal
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9093
+
+11/28/2017 07:27:06.633  |  ->> Praça de Destino: 05
+11/28/2017 07:27:06.679  |  ->> Saída do Sorter: 01
+11/28/2017 07:27:06.713  |  <<- 
+**************************
+  ATENÇÃO: 
+  OCORREU UMA FALHA NA FILA DE LEITURAS E PARA PREVINIR PERDA DE DADOS O TRANSPORTADOR FOI DESATIVADO. 
+  FAVOR, RECONECTAR TODOS OS DISPOSITIVOS NO SOFTWARE DE AUTOMAÇÃO!. 
+***************************
+11/28/2017 07:27:06.769  |  ->> Saída do Sorter: 03
+11/28/2017 07:27:06.820  |  ->> Saída do Sorter: 99
+Recursos de memória de leitura redefinidos.
+
+BALANÇA:     Dados da Mensagem:
+    -------------------
+    Mensagem...:         0.58
+    Data/Hora..: 28/11/2017 19:27:18.829
+    Dispositivo: Balança
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9091
+
+
+DIMENSIONADOR:     Dados da Mensagem:
+    -------------------
+    Mensagem...: ODm02610227015700060093ODm02610227015700060093
+    Data/Hora..: 28/11/2017 19:27:19.878
+    Dispositivo: Portal
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9092
+
+
+SCANNER     Dados da Mensagem:
+    -------------------
+    Mensagem...: 2518230010010205785500000025182300100102057855000000
+    Data/Hora..: 28/11/2017 19:27:20.935
+    Dispositivo: Scanner
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9093
+
+11/28/2017 07:27:20.975  | Volume aferido: <<- 
+    Dados da Mensagem:
+    -------------------
+    Mensagem...: 2518230010010205785500000025182300100102057855000000;26.1;22.7;15.7;6009.3;0.58
+    Data/Hora..: 28/11/2017 19:27:20.935
+    Dispositivo: Scanner\Balança\Portal
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9093
+
+11/28/2017 07:27:21.009  |  ->> Praça de Destino: 05
+11/28/2017 07:27:21.038  |  ->> Saída do Sorter: 01
+
+BALANÇA:     Dados da Mensagem:
+    -------------------
+    Mensagem...:         0.58
+    Data/Hora..: 28/11/2017 19:27:22.076
+    Dispositivo: Balança
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9091
+
+
+BALANÇA:     Dados da Mensagem:
+    -------------------
+    Mensagem...:         0.58
+    Data/Hora..: 28/11/2017 19:27:32.444
+    Dispositivo: Balança
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9091
+
+
+DIMENSIONADOR:     Dados da Mensagem:
+    -------------------
+    Mensagem...: ODm02610227015700060093
+    Data/Hora..: 28/11/2017 19:27:33.483
+    Dispositivo: Portal
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9092
+
+
+SCANNER     Dados da Mensagem:
+    -------------------
+    Mensagem...: 25182300100102057855000000
+    Data/Hora..: 28/11/2017 19:27:34.534
+    Dispositivo: Scanner
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9093
+
+11/28/2017 07:27:34.573  | Volume aferido: <<- 
+    Dados da Mensagem:
+    -------------------
+    Mensagem...: 25182300100102057855000000;26.1;22.7;15.7;6009.3;0.58
+    Data/Hora..: 28/11/2017 19:27:34.534
+    Dispositivo: Scanner\Balança\Portal
+    HostName...: 192.168.0.190
+    IpAddress..: 192.168.0.190
+    Port.......: 9093
+
+11/28/2017 07:27:34.613  |  ->> Praça de Destino: 05
+11/28/2017 07:27:34.666  |  ->> Saída do Sorter: 01
+11/28/2017 07:27:34.705  |  <<- 
+**************************
+  ATENÇÃO: 
+  OCORREU UMA FALHA NA FILA DE LEITURAS E PARA PREVINIR PERDA DE DADOS O TRANSPORTADOR FOI DESATIVADO. 
+  FAVOR, RECONECTAR TODOS OS DISPOSITIVOS NO SOFTWARE DE AUTOMAÇÃO!. 
+***************************
+11/28/2017 07:27:34.758  |  ->> Saída do Sorter: 03
+11/28/2017 07:27:34.806  |  ->> Saída do Sorter: 99
+Recursos de memória de leitura redefinidos.

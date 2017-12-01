@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\obj",
-    "\\obj\\x86",
-    "\\obj\\x86\\Debug"
+    "\\bin\\Debug",
+    "\\Wave"
   ],
-  "SelectedNode": "\\obj\\x86\\Debug\\DesignTimeResolveAssemblyReferences.cache",
+  "SelectedNode": "\\wave.sln",
   "PreviewInSolutionExplorer": false
 }
