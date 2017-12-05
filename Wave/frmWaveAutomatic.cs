@@ -488,7 +488,8 @@ namespace Wave
 		private void btnReamarLeituras_Click(object sender, EventArgs e)
 		{
 			Leitura.Limpar();
-			this.rchLog.AppendText("Recursos de memória de leitura redefinidos.\r");
+            this.exibirStatusFila();
+            this.rchLog.AppendText("Recursos de memória de leitura redefinidos.\r");
 		}
         /// <summary>
         /// 
@@ -816,10 +817,10 @@ namespace Wave
 				try
 				{
 					this.SocketPLC.SendData(destino);
+                    this.exibirStatusFila();
+                    //  System.IO.File.WriteAllText(@"C:\Logstore\AVISAPLCFIM.txt", DateTime.Now.ToString());
 
-                  //  System.IO.File.WriteAllText(@"C:\Logstore\AVISAPLCFIM.txt", DateTime.Now.ToString());
 
-                    
 
 
                     if (this.chkExibirDestinoPLC4.Checked)
@@ -2223,7 +2224,6 @@ namespace Wave
             // 
             // timerFilaLeituras
             // 
-            this.timerFilaLeituras.Enabled = true;
             this.timerFilaLeituras.Interval = 80;
             this.timerFilaLeituras.Tick += new System.EventHandler(this.timerFilaLeituras_Tick);
             // 
