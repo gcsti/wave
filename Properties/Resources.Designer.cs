@@ -103,6 +103,16 @@ namespace Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TELA_LOADING_WAVE {
+            get {
+                object obj = ResourceManager.GetObject("TELA-LOADING-WAVE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap topBPiso {
             get {
                 object obj = ResourceManager.GetObject("topBPiso", resourceCulture);

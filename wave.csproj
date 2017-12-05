@@ -87,6 +87,7 @@
     <Content Include="mswinsck.ocx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\TELA-LOADING-WAVE.JPG" />
     <None Include="Resources\BARRA-LOGO.JPG" />
     <None Include="Resources\BARRA-LARANJA.JPG" />
   </ItemGroup>
