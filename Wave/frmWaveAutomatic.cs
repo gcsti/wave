@@ -370,7 +370,7 @@ namespace Wave
 			e.Cancel = true;
 			try
 			{
-				if (Interaction.InputBox("Para fechar esta aplicação, forneça a senha de administrador?", "Segurança", "****", -1, -1) == "solidez2017")
+				if (Interaction.InputBox("Digite a senha de administrador para fechar:", "Segurança", "****", -1, -1) == "SOLIDEZ")
 				{
 					this.fecharTudo = true;
 					base.Close();
@@ -1348,7 +1348,7 @@ namespace Wave
             this.chkExibirErroCnn.Checked = true;
             this.chkExibirErroCnn.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkExibirErroCnn.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkExibirErroCnn.Location = new System.Drawing.Point(21, 304);
+            this.chkExibirErroCnn.Location = new System.Drawing.Point(21, 302);
             this.chkExibirErroCnn.Name = "chkExibirErroCnn";
             this.chkExibirErroCnn.Size = new System.Drawing.Size(175, 23);
             this.chkExibirErroCnn.TabIndex = 90;
@@ -1361,9 +1361,9 @@ namespace Wave
             this.label5.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(18, 81);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(263, 19);
+            this.label5.Size = new System.Drawing.Size(283, 19);
             this.label5.TabIndex = 88;
-            this.label5.Text = "Máscara nome dos  arquivos de leitura";
+            this.label5.Text = "Máscara do nome dos  arquivos de leitura";
             // 
             // txtMaskArquivoLeitura
             // 
@@ -1372,7 +1372,7 @@ namespace Wave
             this.txtMaskArquivoLeitura.Name = "txtMaskArquivoLeitura";
             this.txtMaskArquivoLeitura.Size = new System.Drawing.Size(332, 26);
             this.txtMaskArquivoLeitura.TabIndex = 89;
-            this.txtMaskArquivoLeitura.Text = "SOLIDEZ_{data}_{hora}{data}{hora}{minuto}.txt";
+            this.txtMaskArquivoLeitura.Text = "SOLIDEZ_{data}_{data}{hora}{minuto}{segundo}.txt";
             // 
             // chkLogLeituras
             // 
@@ -1391,9 +1391,9 @@ namespace Wave
             this.label3.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(16, 25);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(219, 19);
+            this.label3.Size = new System.Drawing.Size(288, 19);
             this.label3.TabIndex = 80;
-            this.label3.Text = "Caminho dos arquivos de leitura";
+            this.label3.Text = "Caminho para salvar os arquivos de leitura";
             // 
             // txtDestinoArquivos
             // 
@@ -1538,53 +1538,53 @@ namespace Wave
             // 
             // btnRearmarPLC
             // 
-            this.btnRearmarPLC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnRearmarPLC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnRearmarPLC.Enabled = false;
-            this.btnRearmarPLC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRearmarPLC.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRearmarPLC.Location = new System.Drawing.Point(199, 414);
             this.btnRearmarPLC.Name = "btnRearmarPLC";
             this.btnRearmarPLC.Size = new System.Drawing.Size(151, 28);
             this.btnRearmarPLC.TabIndex = 144;
-            this.btnRearmarPLC.Text = "Rearmar";
+            this.btnRearmarPLC.Text = "Conectar P";
             this.btnRearmarPLC.UseVisualStyleBackColor = false;
             this.btnRearmarPLC.Click += new System.EventHandler(this.btnRearmarPLC_Click);
             // 
             // btnRearmarScanner
             // 
-            this.btnRearmarScanner.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnRearmarScanner.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnRearmarScanner.Enabled = false;
-            this.btnRearmarScanner.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRearmarScanner.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRearmarScanner.Location = new System.Drawing.Point(10, 414);
             this.btnRearmarScanner.Name = "btnRearmarScanner";
             this.btnRearmarScanner.Size = new System.Drawing.Size(151, 28);
             this.btnRearmarScanner.TabIndex = 143;
-            this.btnRearmarScanner.Text = "Rearmar";
+            this.btnRearmarScanner.Text = "Conectar S";
             this.btnRearmarScanner.UseVisualStyleBackColor = false;
             this.btnRearmarScanner.Click += new System.EventHandler(this.btnRearmarScanner_Click);
             // 
             // btnRearmarPortal
             // 
-            this.btnRearmarPortal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnRearmarPortal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnRearmarPortal.Enabled = false;
-            this.btnRearmarPortal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRearmarPortal.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRearmarPortal.Location = new System.Drawing.Point(199, 333);
             this.btnRearmarPortal.Name = "btnRearmarPortal";
             this.btnRearmarPortal.Size = new System.Drawing.Size(151, 28);
             this.btnRearmarPortal.TabIndex = 142;
-            this.btnRearmarPortal.Text = "Rearmar";
+            this.btnRearmarPortal.Text = "Conectar D";
             this.btnRearmarPortal.UseVisualStyleBackColor = false;
             this.btnRearmarPortal.Click += new System.EventHandler(this.btnRearmarPortal_Click);
             // 
             // btnRearmarBalanca
             // 
-            this.btnRearmarBalanca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnRearmarBalanca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnRearmarBalanca.Enabled = false;
-            this.btnRearmarBalanca.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRearmarBalanca.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRearmarBalanca.Location = new System.Drawing.Point(10, 333);
             this.btnRearmarBalanca.Name = "btnRearmarBalanca";
             this.btnRearmarBalanca.Size = new System.Drawing.Size(151, 28);
             this.btnRearmarBalanca.TabIndex = 141;
-            this.btnRearmarBalanca.Text = "Rearmar";
+            this.btnRearmarBalanca.Text = "Conectar B";
             this.btnRearmarBalanca.UseVisualStyleBackColor = false;
             this.btnRearmarBalanca.Click += new System.EventHandler(this.btnRearmarBalanca_Click);
             // 
@@ -1675,8 +1675,8 @@ namespace Wave
             // btnDisconnect
             // 
             this.btnDisconnect.Enabled = false;
-            this.btnDisconnect.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDisconnect.Location = new System.Drawing.Point(10, 448);
+            this.btnDisconnect.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDisconnect.Location = new System.Drawing.Point(10, 471);
             this.btnDisconnect.Name = "btnDisconnect";
             this.btnDisconnect.Size = new System.Drawing.Size(151, 35);
             this.btnDisconnect.TabIndex = 132;
@@ -1695,12 +1695,12 @@ namespace Wave
             // 
             // btnConnect
             // 
-            this.btnConnect.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConnect.Location = new System.Drawing.Point(199, 448);
+            this.btnConnect.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConnect.Location = new System.Drawing.Point(199, 471);
             this.btnConnect.Name = "btnConnect";
             this.btnConnect.Size = new System.Drawing.Size(151, 35);
             this.btnConnect.TabIndex = 129;
-            this.btnConnect.Text = "Conectar";
+            this.btnConnect.Text = "Conectar Todos";
             this.btnConnect.UseVisualStyleBackColor = true;
             this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
@@ -2113,7 +2113,7 @@ namespace Wave
             this.tabPageLog.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageLog.Size = new System.Drawing.Size(369, 522);
             this.tabPageLog.TabIndex = 1;
-            this.tabPageLog.Text = "Log de Eventos";
+            this.tabPageLog.Text = "Configuração do Log";
             this.tabPageLog.UseVisualStyleBackColor = true;
             // 
             // chkExibirErroDestCx
@@ -2122,7 +2122,7 @@ namespace Wave
             this.chkExibirErroDestCx.Checked = true;
             this.chkExibirErroDestCx.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkExibirErroDestCx.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkExibirErroDestCx.Location = new System.Drawing.Point(21, 271);
+            this.chkExibirErroDestCx.Location = new System.Drawing.Point(21, 273);
             this.chkExibirErroDestCx.Name = "chkExibirErroDestCx";
             this.chkExibirErroDestCx.Size = new System.Drawing.Size(226, 23);
             this.chkExibirErroDestCx.TabIndex = 96;
@@ -2148,7 +2148,7 @@ namespace Wave
             this.chkLogLeiturasConsolidadaResumida.Checked = true;
             this.chkLogLeiturasConsolidadaResumida.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkLogLeiturasConsolidadaResumida.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkLogLeiturasConsolidadaResumida.Location = new System.Drawing.Point(21, 211);
+            this.chkLogLeiturasConsolidadaResumida.Location = new System.Drawing.Point(21, 215);
             this.chkLogLeiturasConsolidadaResumida.Name = "chkLogLeiturasConsolidadaResumida";
             this.chkLogLeiturasConsolidadaResumida.Size = new System.Drawing.Size(270, 23);
             this.chkLogLeiturasConsolidadaResumida.TabIndex = 94;
@@ -2158,8 +2158,8 @@ namespace Wave
             // 
             // btnSalvarLog
             // 
-            this.btnSalvarLog.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvarLog.Location = new System.Drawing.Point(21, 334);
+            this.btnSalvarLog.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvarLog.Location = new System.Drawing.Point(20, 367);
             this.btnSalvarLog.Name = "btnSalvarLog";
             this.btnSalvarLog.Size = new System.Drawing.Size(144, 35);
             this.btnSalvarLog.TabIndex = 92;
@@ -2181,7 +2181,7 @@ namespace Wave
             // 
             this.lblFilaDim.AutoSize = true;
             this.lblFilaDim.Font = new System.Drawing.Font("Calibri Light", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFilaDim.Location = new System.Drawing.Point(552, 62);
+            this.lblFilaDim.Location = new System.Drawing.Point(544, 63);
             this.lblFilaDim.Name = "lblFilaDim";
             this.lblFilaDim.Size = new System.Drawing.Size(77, 42);
             this.lblFilaDim.TabIndex = 95;
@@ -2199,9 +2199,12 @@ namespace Wave
             // 
             // btnReamarLeituras
             // 
-            this.btnReamarLeituras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnReamarLeituras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnReamarLeituras.Enabled = false;
+            this.btnReamarLeituras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnReamarLeituras.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnReamarLeituras.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReamarLeituras.ForeColor = System.Drawing.Color.White;
             this.btnReamarLeituras.Location = new System.Drawing.Point(713, 66);
             this.btnReamarLeituras.Name = "btnReamarLeituras";
             this.btnReamarLeituras.Size = new System.Drawing.Size(116, 35);
@@ -2213,13 +2216,16 @@ namespace Wave
             // btnLimpar
             // 
             this.btnLimpar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLimpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLimpar.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.ForeColor = System.Drawing.Color.White;
             this.btnLimpar.Location = new System.Drawing.Point(835, 66);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(111, 35);
             this.btnLimpar.TabIndex = 93;
             this.btnLimpar.Text = "Limpar Log";
-            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.UseVisualStyleBackColor = false;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // timerFilaLeituras

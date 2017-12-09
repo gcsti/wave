@@ -14,18 +14,39 @@ namespace Wave
 
         public frmSplash()
         {
-          
+
             this.InitializeComponent();
         }
-      
+
         private void frmSplash_Load(object sender, EventArgs e)
         {
-           
+
         }
 
         private void frmSplash_Activated(object sender, EventArgs e)
         {
             Application.DoEvents();
+            if (System.IO.File.Exists(@"c:\wave\licence.txt"))
+            {
+                string licence = System.IO.File.ReadAllText(@"c:\wave\licence.txt");
+                
+                int a = int.Parse(licence.Substring(6, 6));
+                int b = int.Parse(DateTime.Now.ToString("yyMMdd"));
+                int c = int.Parse(licence.Substring(22, 6));
+                if (!(a < b && b < c))
+                {
+                    MessageBox.Show("Licença Expirada");
+                    Application.Exit();
+                }
+            }
+            else
+            {
+
+
+                MessageBox.Show("Licença Expirada");
+                Application.Exit();
+
+            }
             Thread.Sleep(2000);
             new frmWaveAutomatic().Show();
 

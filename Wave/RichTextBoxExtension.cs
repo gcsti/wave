@@ -136,7 +136,7 @@ public static class RichTextBoxExtension
 				" <<- ",
 				text,
 				"\n"
-			}), Color.Red, Color.Yellow, new Font("Calibri Light", 12f, FontStyle.Italic));
+			}), Color.White, Color.Red, new Font("Calibri Light", 12f, FontStyle.Italic));
 		};
 		if (control.InvokeRequired)
 		{

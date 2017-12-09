@@ -7,12 +7,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wave", "wave.csproj", "{2BC
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BC16C01-048B-4B92-A387-5D14274E0904}.Debug|x64.ActiveCfg = Release|x64
+		{2BC16C01-048B-4B92-A387-5D14274E0904}.Debug|x64.Build.0 = Release|x64
 		{2BC16C01-048B-4B92-A387-5D14274E0904}.Debug|x86.ActiveCfg = Debug|x86
 		{2BC16C01-048B-4B92-A387-5D14274E0904}.Debug|x86.Build.0 = Debug|x86
+		{2BC16C01-048B-4B92-A387-5D14274E0904}.Release|x64.ActiveCfg = Release|x64
+		{2BC16C01-048B-4B92-A387-5D14274E0904}.Release|x64.Build.0 = Release|x64
 		{2BC16C01-048B-4B92-A387-5D14274E0904}.Release|x86.ActiveCfg = Release|x86
 		{2BC16C01-048B-4B92-A387-5D14274E0904}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
